@@ -1,0 +1,1 @@
+"# Masila-AbcOLX"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/masss726/Masila-AbcOLX.gitgit push -u origin main

@@ -1,10 +1,167 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
-    <title>MasilaAbc OLX Shop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | MasilaAbc OLX Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #007bff, #00c6ff);
+            color: white;
+            padding: 50px 20px;
+            border-radius: 0 0 30px 30px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header h1 span {
+            color: yellow;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 1rem;
+            color: white;
+            background-color: #ff6600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            background-color: #e65c00;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+        }
+
+        .feature {
+            background: white;
+            margin: 15px;
+            padding: 20px;
+            max-width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+
+        .feature h2 {
+            color: #007bff;
+            font-size: 1.5rem;
+        }
+
+        /* User Section */
+        .user-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .user-box {
+            background: white;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-box h3 {
+            color: #007bff;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to MasilaAbc OLX Shop</h1>
-    <p>Find the best deals on second-hand products.</p>
+    <header>
+        <h1>Welcome to <span>MasilaAbc OLX Shop</span></h1>
+        <p>Your one-stop destination for the best second-hand deals!</p>
+        <a href="/products" class="btn">Browse Products</a>
+    </header>
+
+    <!-- User Profile & Options -->
+    <section class="user-section">
+        <div class="user-box">
+            <h3>👤 User Profile</h3>
+            <p>View and edit your profile information.</p>
+            <a href="/profile" class="btn">View Profile</a>
+        </div>
+        <div class="user-box">
+            <h3>📦 Your Orders</h3>
+            <p>Check your past and active orders.</p>
+            <a href="/orders" class="btn">View Orders</a>
+        </div>
+        <div class="user-box">
+            <h3>📋 Your Details</h3>
+            <p>Update your account information.</p>
+            <a href="/details" class="btn">Edit Details</a>
+        </div>
+        <div class="user-box">
+            <h3>🏠 Your Address</h3>
+            <p>Manage your delivery addresses.</p>
+            <a href="/address" class="btn">Manage Address</a>
+        </div>
+        <div class="user-box">
+            <h3>📢 Post Your Product</h3>
+            <p>Sell your items quickly.</p>
+            <a href="/post-product" class="btn">Post Now</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <h2>📦 Wide Range of Products</h2>
+            <p>Find electronics, furniture, vehicles, and more at unbeatable prices.</p>
+        </div>
+        <div class="feature">
+            <h2>💰 Best Deals</h2>
+            <p>Save money by purchasing quality pre-owned items at affordable rates.</p>
+        </div>
+        <div class="feature">
+            <h2>🔄 Easy Buy & Sell</h2>
+            <p>Post your items for sale and connect with buyers instantly.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MasilaAbc OLX Shop. All rights reserved.</p>
+    </footer>
 </body>
 </html>

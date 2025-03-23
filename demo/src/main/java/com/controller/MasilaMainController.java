@@ -40,10 +40,10 @@ public class MasilaMainController {
 	public String userAddress() {
 		return "address"; // Create address.html
 	}
-
+	//wellcome->postProduct
 	@GetMapping("/post-product")
 	public String postProduct() {
-		return "post-product"; // Create post-product.html
+		return "PostYourProducts"; // Create post-product.html
 	}
 	
 //*************First Start This line************************************************

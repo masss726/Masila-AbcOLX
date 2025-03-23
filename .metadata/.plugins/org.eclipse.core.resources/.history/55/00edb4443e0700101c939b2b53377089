@@ -1,0 +1,20 @@
+package com.example.demoMasilaOLXController;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+@Controller
+public class MasilaOlxMainController {
+	
+	@GetMapping("/index")
+	public String name() {
+		System.out.println("hello Masila");
+		return "Wellcome";		
+		
+	}
+	
+	}
+
+	
+	
+
+

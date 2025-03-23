@@ -1,0 +1,11 @@
+package com.example.demoMasilaOLXController;
+
+public class MasilaOlxMainController {
+	
+	public void Masila() {
+		System.out.println("Hello Masila");
+		
+	}
+	
+
+}

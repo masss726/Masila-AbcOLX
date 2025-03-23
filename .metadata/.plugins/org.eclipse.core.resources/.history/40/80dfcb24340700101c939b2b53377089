@@ -1,0 +1,17 @@
+package com.example.demoMasilaOLXController;
+
+public class MasilaOlxMainController {
+	//Constrector Cheacking
+	public MasilaOlxMainController() {
+		super();
+		System.out.println("Hello Masila");
+	}
+	
+	
+		
+	}
+
+	
+	
+
+}

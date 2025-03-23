@@ -1,0 +1,19 @@
+package com.example.demoMasilaOLXController;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class MasilaOlxMainController {
+    
+    @GetMapping("/")  // Ensure this is correctly mapped
+    public String welcome() {
+        return "welcome";  // This should match welcome.html inside src/main/resources/templates/
+    }
+}
+
+
+	
+	
+
+

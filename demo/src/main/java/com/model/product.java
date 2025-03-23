@@ -1,12 +1,25 @@
 package com.model;
 
-import jakarta.persistence.*;
+import org.springframework.stereotype.Component;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Lob;
+import jakarta.persistence.Table;
+
+@Component
 @Entity
 @Table(name = "products")
 public class product {
 
-    @Id
+    public product() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
@@ -37,4 +50,15 @@ public class product {
 
     public byte[] getImage() { return image; }
     public void setImage(byte[] image) { this.image = image; }
+	public product(Long id, String name, String category, Double price, String description, byte[] image) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.category = category;
+		this.price = price;
+		this.description = description;
+		this.image = image;
+	}
+    
+    
 }

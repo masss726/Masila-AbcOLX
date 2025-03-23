@@ -12,6 +12,9 @@ public class MasilaMainController {
 	public String Index() {
 		return "wellcome";
 	}
+	
+	//wellcome --> browesProducts
+	
 
 	@GetMapping("/browse")
 	public String BrowseProducts() {
